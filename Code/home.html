@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="side.css">
+    <script src="search.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="container1">
+        <nav>
+            <ul class="left">
+                <li><a href="#"><button>Campus</button></a></li>
+                <li><a href="#"><button>Companies</button></a></li>
+                <li><a href="#"><button>Placements</button></a></li>
+                <li><a href="cal.html"><button>Calendar</button></a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="right">
+                <!-- Search bar -->
+                <li>
+                    <form id="searchForm">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+                <li><a href="#"><button>Login</button></a></li>
+                <li><a href="#"><button>Sign Up</button></a></li>
+            </ul>
+        </nav>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+        <div id="inspiringcomnt" style="text-align: center; font-size: 50px; font-family: cursive;">
+        "Dream. Dare. Do."
+    </div>
+<marquee >
+    <div class="container">
+        <div class="item">Flex Item 1</div>
+        <div class="item"> Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+</marquee>
+
+<div id="domains" class="domains">
+    <button onclick="showCompanies('web')">WEB</button>
+    <button onclick="showCompanies('ai')">AI DS</button>
+    <button onclick="showCompanies('it')">IT</button>
+    <button onclick="showCompanies('automobile')">Automobile</button>
+    <button onclick="showCompanies('electronics')">Electronics</button>
+</div>
+<div class="card-container01" style="flex-direction: row;">
+<div id="webcard" class="card-container" style="flex-direction: row;">
+    <!-- Web Cards -->
+    <div class="flashcard" id="comp1">
+        <h1>AMAZON</h1>
+        <br/>
+        <h2>Junior Web Application Developer</h2>
+        <br/>
+        <h3>Date:07/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp2">
+        <h1>Microsoft</h1>
+        <br/>
+        <h2>Junior Web Application Developer</h2>
+        <br/>
+        <h3>Date:08/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp3">
+        <h1>ADOBE</h1>
+        <br/>
+        <h2>Junior Web Application Developer</h2>
+        <br/>
+        <h3>Date:09/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+</div>
+
+<div id="aicard" class="card-container">
+    <!-- AI Cards -->
+    <div class="flashcard" id="comp1">
+        <h1>Black Rock</h1>
+        <br/>
+        <h2>Junior AI Analyst</h2>
+        <br/>
+        <h3>Date:07/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp2">
+        <h1>Open AI</h1>
+        <br/>
+        <h2>Junior AI Analyst</h2>
+        <br/>
+        <h3>Date:08/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp3">
+        <h1>Google</h1>
+        <br/>
+        <h2>Junior AI Analyst</h2>
+        <br/>
+        <h3>Date:09/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+</div>
+
+<div id="itcard" class="card-container">
+    <!-- IT Cards -->
+    <div class="flashcard" id="comp1">
+        <h1>TCS</h1>
+        <br/>
+        <h2>Junior IT Analyst</h2>
+        <br/>
+        <h3>Date:07/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp2">
+        <h1>Wipro</h1>
+        <br/>
+        <h2>Junior IT Analyst</h2>
+        <br/>
+        <h3>Date:08/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp3">
+        <h1>Infosys</h1>
+        <br/>
+        <h2>Junior IT Engineer</h2>
+        <br/>
+        <h3>Date:09/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+</div>
+
+<div id="autocard" class="card-container">
+    <!-- Automobile Cards -->
+    <div class="flashcard" id="comp1">
+        <h1>BMW</h1>
+        <br/>
+        <h2>Junior AI Analyst</h2>
+        <br/>
+        <h3>Date:07/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp2">
+        <h1>VolksWagon</h1>
+        <br/>
+        <h2>Junior Designer</h2>
+        <br/>
+        <h3>Date:08/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp3">
+        <h1>Mercedes</h1>
+        <br/>
+        <h2>Junior Automobile Enginnert</h2>
+        <br/>
+        <h3>Date:09/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+</div>
+
+<div id="electronicscard" class="card-container">
+    <!-- Electronics Cards -->
+    <div class="flashcard" id="comp1">
+        <h1>Intel</h1>
+        <br/>
+        <h2>Junior Electronics Analyst</h2>
+        <br/>
+        <h3>Date:07/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp2">
+        <h1>Snapdragon</h1>
+        <br/>
+        <h2>Junior Electronics Analyst</h2>
+        <br/>
+        <h3>Date:08/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+
+    <div class="flashcard" id="comp3">
+        <h1>Nvidia</h1>
+        <br/>
+        <h2>Junior Electronics Analyst</h2>
+        <br/>
+        <h3>Date:09/03/24</h3>
+        <button onclick="window.location.href='amazon.html'">Know More</button>
+    </div>
+</div>
+</div>
+
+
+
+<div class="studmat">
+    <div class="heading">
+        <h1>Study Material</h1>
+        <p><strong>Best Study Material for Placements Preparations</strong></p>
+    </div>
+
+    <div class="scroll-container">
+        <div class="scroll">
+            <div class="card">
+                <a class="specialization_card" href="https://trainings.internshala.com/full-stack-web-development-placement-guarantee-course/?utm_source=is_web_IS-home-midsection_web1" target="_blank">
+                    <div class="thumbnail">
+                        <img src="https://internshala.com/static/images/home/specializations/fsd-min.png" loading="lazy" alt="thumbnail" title="Full Stack Development Course"/>
+                        <div class="rating">New</div>
+                    </div>
+                    <div class="body">
+                        <h2>Web Development</h2>
+                        <h3>Previous Year Interview Questions</h3>
+                        <span class="label">material with guaranteed placements</span>
+                        <span class="know-more-cta">Know more <i class="ic-16-s15-chevron-right"></i></span>
+                    </div>
+                </a>
+            </div>
+            <!-- Add other cards here -->
+            <div class="card">
+                <a class="specialization_card" href="https://trainings.internshala.com/data-science-placement-guarantee-course/?utm_source=is_web_IS-home-midsection_web2" target="_blank">
+                    <div class="thumbnail">
+                        <img src="https://internshala.com/static/images/home/specializations/ds-min.png" loading="lazy" alt="thumbnail" title="Data Science Course"/>
+                        <div class="rating"><i class="ic-16-filled-star"></i> 4.2</div>
+                    </div>
+                    <div class="body">
+                        <h2>Artificial Intelligence and Data Science</h2>
+                        <h3>Previous Year Interview Questions</h3>
+                        <span class="label">material with guaranteed internship</span>
+                        <span class="know-more-cta">Know more <i class="ic-16-s15-chevron-right"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a class="specialization_card" href="https://trainings.internshala.com/human-resource-management-placement-guarantee-course/?utm_source=is_web_IS-home-midsection_web3" target="_blank">
+                    <div class="thumbnail">
+                        <img src="https://internshala.com/static/images/home/specializations/hrm-min.png" loading="lazy" alt="thumbnail" title="Human Resource Management Course"/>
+                        <div class="rating"><i class="ic-16-filled-star"></i> 4.3</div>
+                    </div>
+                    <div class="body">
+                        <h2>Human Resource Management</h2>
+                        <h3>Previous Year Interview Questions</h3>
+                        <span class="label">material with guaranteed placements</span>
+                        <span class="know-more-cta">Know more <i class="ic-16-s15-chevron-right"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a class="specialization_card" href="https://trainings.internshala.com/digital-marketing-placement-guarantee-course/?utm_source=is_web_IS-home-midsection_web4" target="_blank">
+                    <div class="thumbnail">
+                        <img src="https://internshala.com/static/images/home/specializations/dm-min.png" loading="lazy" alt="thumbnail" title="Digital Marketing Course"/>
+                        <div class="rating"><i class="ic-16-filled-star"></i> 4.4</div>
+                    </div>
+                    <div class="body">
+                        <h2>Information Technology</h2>
+                        <h3>Previous Year Interview Questions</h3>
+                        <span class="label">material with guaranteed placements</span>
+                        <span class="know-more-cta">Know more <i class="ic-16-s15-chevron-right"></i></span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a class="specialization_card" href="https://trainings.internshala.com/product-management-placement-guarantee-course/?utm_source=is_web_IS-home-midsection_web5" target="_blank">
+                    <div class="thumbnail">
+                        <img src="https://internshala.com/static/images/home/specializations/pm-min.png" loading="lazy" alt="thumbnail" title="Product Management Course"/>
+                        <div class="rating">New</div>
+                    </div>
+                    <div class="body">
+                        <h2>Automobile</h2>
+                        <h3>Previous Year Interview Questions</h3>
+                        <span class="label">material with guaranteed internship</span>
+                        <span class="know-more-cta">Know more <i class="ic-16-s15-chevron-right"></i></span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a class="specialization_card" href="https://trainings.internshala.com/ui-ux-placement-guarantee-course/?utm_source=is_web_IS-home-midsection_web6" target="_blank">
+                    <div class="thumbnail">
+                        <img src="https://internshala.com/static/images/home/specializations/ui-min.png" loading="lazy" alt="thumbnail" title="UI/UX Design Course"/>
+                        <div class="rating">New</div>
+                    </div>
+                    <div class="body">
+                        <h2>UI/UX Design</h2>
+                        <h3>Previous Year Interview Questions</h3>
+                        <span class="label">material with guaranteed internship</span>
+                        <span class="know-more-cta">Know more <i class="ic-16-s15-chevron-right"></i></span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a class="specialization_card" href="https://trainings.internshala.com/electric-vehicles-placement-guarantee-course/?utm_source=is_web_IS-home-midsection_web7" target="_blank">
+                    <div class="thumbnail">
+                        <img src="https://internshala.com/static/images/home/specializations/ev-min.png" loading="lazy" alt="thumbnail" title="Electric Vehicle Industry Course"/>
+                        <div class="rating">New</div>
+                    </div>
+                    <div class="body">
+                        <h2>Electric Vehicle Industry</h2>
+                        <h3>Previous Year Interview Questions</h3>
+                        <span class="label">material with guaranteed placements</span>
+                        <span class="know-more-cta">Know more <i class="ic-16-s15-chevron-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header box" style="font-size: 100px;">
+    <h1 style="text-align: center;">Our Placement Records</h1>
+
+    <div id="r1">
+    <p class="r1" style="font-size: 20px;">2023: 99% Placed</p>
+    <p class="r1" style="font-size: 20px;">2022: 95% Placed</p>
+    </div>
+
+    <div id="r2">
+    <p class="r2" style="font-size: 20px;">2021: 93% Placed</p>
+    <p class="r2" style="font-size: 20px;">2020: 92% Placed</p>
+    </div>
+
+
+</div>
+
+<section class="testimonials">
+    <h2>What Students Say</h2>
+    <div class="testimonial-grid">
+        <div class="testimonial-card">
+            <img src="student-photo-1.jpg" alt="Student 1">
+            <p>"The campus placement portal was a game-changer for me. The resources and support provided were invaluable."</p>
+            <h4>John Doe</h4>
+        </div>
+        <div class="testimonial-card">
+            <img src="student-photo-2.jpg" alt="Student 2">
+            <p>"I landed my dream job thanks to the campus placement portal. The process was seamless and efficient."</p>
+            <h4>Jane Smith</h4>
+        </div>
+    </div>
+</section>
+
+<div id="faq-container">
+    <div id="faq-item-1">
+        <div id="faq-question-1"><h3>Frequently Asked Question</h3></div>
+        <div id="faq-answer-1"></div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">What are the eligibility criteria for campus placements?</div>
+      <div class="faq-answer">
+        <p>The eligibility criteria may vary depending on the company and the job role. However, most companies typically require a minimum CGPA or percentage, along with relevant academic qualifications. Some companies may also consider additional factors like coding skills, certifications, or internship experience.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">How does the recruitment process work?</div>
+      <div class="faq-answer">
+        <p>The recruitment process usually involves multiple rounds, such as online tests, coding challenges, group discussions, technical interviews, and HR rounds. The number of rounds and the format may differ for each company.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">What are the typical job roles offered during campus placements?</div>
+      <div class="faq-answer">
+        <p>Common job roles offered during campus placements include software engineering, data analysis, business analysis, marketing, finance, and operations roles. The specific roles may vary based on the company and the industry.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">How can I prepare for the interviews?</div>
+      <div class="faq-answer">
+        <p>To prepare for interviews, you can access study materials, practice coding challenges, review common interview questions, and participate in mock interviews. Many placement portals provide resources and tips specific to companies or job roles.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">What is the typical salary range for campus placements?</div>
+      <div class="faq-answer">
+        <p>The salary range can vary significantly based on factors like the company, job role, location, and your academic performance. It's best to refer to the company-specific information or placement statistics from previous years to get an idea of the average and highest salary packages offered.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">How can I access company information and profiles?</div>
+      <div class="faq-answer">
+        <p>Many placement portals have dedicated sections or pages where students can access company profiles, including details about the company's background, industry, work culture, and job roles. This information can help you understand the companies better and prepare for interviews.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">Are there any opportunities for internships or pre-placement offers?</div>
+      <div class="faq-answer">
+        <p>Yes, some companies offer internship opportunities or pre-placement offers (PPOs) to students based on their performance during internships or recruitment processes. These opportunities can provide valuable work experience and potentially lead to full-time job offers.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">How can I stay informed about upcoming company visits and recruitment events?</div>
+      <div class="faq-answer">
+        <p>The placement portal or career services center typically maintains a calendar or schedule of upcoming company visits, recruitment events, and application deadlines. You can also subscribe to notifications or follow social media channels to stay updated.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">What should I include in my resume and cover letter?</div>
+      <div class="faq-answer">
+        <p>Your resume should highlight your academic achievements, relevant projects, internships, and any additional skills or certifications. The cover letter should express your interest in the company and role, and highlight how your qualifications align with the job requirements.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">Can I apply for multiple job roles or companies?</div>
+      <div class="faq-answer">
+        <p>Yes, most placement portals allow students to apply for multiple job roles or companies, as long as they meet the respective eligibility criteria. It's advisable to carefully research and prioritize the roles that align best with your interests and career goals.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">How can I improve my chances of getting placed?</div>
+      <div class="faq-answer">
+        <p>To improve your chances of getting placed, maintain a good academic record, actively participate in campus activities, gain relevant internship or project experience, and thoroughly prepare for the recruitment process. Networking with alumni, attending company events, and seeking guidance from career counselors can also be helpful.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">What should I expect during the on-campus recruitment process?</div>
+      <div class="faq-answer">
+        <p>During the on-campus recruitment process, you can expect to go through multiple rounds of assessments, such as written tests, coding challenges, group discussions, and interviews. Companies may also conduct pre-placement talks or sessions to provide more information about the roles and company culture.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">Can I negotiate the salary or job offer?</div>
+      <div class="faq-answer">
+        <p>In some cases, you may have the opportunity to negotiate the salary or job offer, especially if you have multiple offers or exceptional qualifications. However, it's important to approach the negotiation process tactfully and be prepared to provide valid reasons for your request.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">What should I do if I receive a job offer?</div>
+      <div class="faq-answer">
+        <p>If you receive a job offer, review the details carefully, including the job role, compensation package, and terms and conditions. If you accept the offer, you may need to provide necessary documentation and follow the onboarding process outlined by the company.</p>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-question">What if I don't get placed during campus placements?</div>
+      <div class="faq-answer">
+        <p>If you don't get placed during campus placements, don't get discouraged. Many students find opportunities through off-campus recruitment drives, job portals, or networking events. You can also consider pursuing higher education or explore entrepreneurial opportunities.</p>
+      </div>
+    </div>
+
+</div>
+<script>
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+      });
+    });
+  </script>
+<div id="root">
+    <div id="root-item1">
+        <h1>Quick Query Forum</h1>
+        <div class="chat-container" id="chat-container"></div>
+        <div class="input-container">
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+    </div>
+    
+  </div>
+
+  <script>
+    const chatContainer = document.getElementById('chat-container');
+    const messageInput = document.getElementById('message-input');
+    const sendButton = document.getElementById('send-button');
+
+    const messages = [];
+
+    const addMessage = (message) => {
+      const messageElement = document.createElement('div');
+      messageElement.classList.add('message');
+      messageElement.textContent = message;
+      chatContainer.appendChild(messageElement);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    };
+
+    sendButton.addEventListener('click', () => {
+      const message = messageInput.value.trim();
+      if (message) {
+        messages.push(message);
+        addMessage(message);
+        messageInput.value = '';
+      }
+    });
+
+    messageInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        sendButton.click();
+      }
+    });
+  </script>    
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Learn more about our campus placement portal and how we help students and employers connect.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="footer-section">
+        <h3>TPO Registration</h3>
+        <p>Register as a Training and Placement Officer (TPO) to access exclusive features and resources.</p>
+        <a href="#">Register Now</a>
+      </div>
+      <div class="footer-section">
+        <h3>Post a Job</h3>
+        <p>Are you an employer looking to hire talented students? Post your job openings here.</p>
+        <a href="#">Post a Job</a>
+      </div>
+      <div class="footer-section">
+        <h3>Listed Companies</h3>
+        <p>Explore the list of companies participating in our campus placements.</p>
+        <a href="#">View Companies</a>
+      </div>
+      <div class="footer-section">
+        <h3>Terms and Conditions</h3>
+        <p>Read our terms and conditions for using the campus placement portal.</p>
+        <a href="#">View Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Campus Placement Portal. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

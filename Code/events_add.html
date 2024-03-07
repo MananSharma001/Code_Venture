@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+</head>
+<body>
+    <h1>Event Management</h1>
+    <div>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date">
+        <label for="event">Event:</label>
+        <input type="text" id="event">
+        <button onclick="addEvent()">Add Event</button>
+    </div>
+    <div>
+        <h2>Events</h2>
+        <ul id="eventList"></ul>
+    </div>
+
+    <script>
+        // Data structure to store events for each date
+        const eventsByDate = {};
+
+        // Function to add an event for a specific date
+        function addEvent() {
+            const dateInput = document.getElementById('date');
+            const eventInput = document.getElementById('event');
+            const date = dateInput.value;
+            const event = eventInput.value;
+
+            // Check if the date already has events
+            if (!eventsByDate[date]) {
+                eventsByDate[date] = [];
+            }
+
+            // Add the event to the array for that date
+            eventsByDate[date].push(event);
+
+            // Update the UI
+            updateEventList();
+        }
+
+        // Function to update the event list in the UI
+        function updateEventList() {
+            const eventList = document.getElementById('eventList');
+            eventList.innerHTML = ''; // Clear the existing list
+
+            // Loop through all dates and display events
+            for (const date in eventsByDate) {
+                const events = eventsByDate[date];
+                const listItem = document.createElement('li');
+                listItem.textContent = `${date}: ${events.join(', ')}`;
+                eventList.appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+</html>

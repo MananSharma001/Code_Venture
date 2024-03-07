@@ -1,0 +1,135 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main styles */
+main {
+    padding: 40px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.featured-companies,
+.placement-stats,
+.testimonials {
+    margin-bottom: 40px;
+}
+
+.company-grid,
+.stats-grid,
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.company-card,
+.stat-card,
+.testimonial-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.company-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+}
